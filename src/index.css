@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #1A1B23;
+  font-family: Elza;
+}

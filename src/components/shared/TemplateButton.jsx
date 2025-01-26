@@ -11,7 +11,7 @@ const TemplateButton = ({ id, Icon, label, inactive, isActive, onClick, tooltipT
         onClick={onClick}
         id={`template-${id}`}
       >
-        {Icon && <Icon className="m-1 mr-2.5" />}
+        {Icon && <Icon className="m-1 mr-1.5" />}
         <p
           className={`font-medium text-sm text-white`}
         >

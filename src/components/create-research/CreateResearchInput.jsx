@@ -43,11 +43,11 @@ const CreateResearchInput = () => {
             id="create-button"
             RightIcon={RightArrowIcon} 
             text="Create" 
-            disabled={value.length === 0} 
+            disabled={value.length === 0 || (isTemplateActive && !activeTemplate)} 
             customClassname="[background:linear-gradient(269.51deg,#7651F4_3.4%,#8731FF_94.69%)]"
             onClick={() => navigate("/research")}
             />
-            {value.length === 0 &&  
+            {(value.length === 0 || (isTemplateActive && !activeTemplate)) &&  
             <Tooltip
                 anchorSelect={`#create-button`}
                 content={"Make sure you: selected a template and added your research subject in the text box"}
